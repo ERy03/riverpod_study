@@ -19,7 +19,7 @@ class StateNotifierProviderMyApp extends ConsumerWidget {
   Random random = Random();
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final listOfString = ref.watch(myProvider) as List;
+    final List<String> listOfString = ref.watch(myProvider);
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
